@@ -7,6 +7,7 @@ public class HomeWork {
         System.out.println(task1());
         task2();
         task3();
+        task4();
     }
 
     public static float task1() {
@@ -54,6 +55,13 @@ public class HomeWork {
 
     public static void printSum(Integer a, Integer b) { // Тут лишний throws FileNotFoundException
         System.out.println(a + b);
+    }
+
+    public static void task4() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите не пустую строку");
+        String str = scanner.nextLine();
+        if (str.length() < 1) throw new RuntimeException("Пустые строки вводить нельзя");
     }
 
 
